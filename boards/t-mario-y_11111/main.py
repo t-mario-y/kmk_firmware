@@ -3,6 +3,8 @@ from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.split import Split, SplitType
 
+print("Starting 11111 keyboard.")
+
 keyboard = KMKKeyboard()
 
 layers_ext = Layers()
