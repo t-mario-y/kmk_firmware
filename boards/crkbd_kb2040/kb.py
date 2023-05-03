@@ -22,7 +22,6 @@ class KMKKeyboard(_KMKKeyboard):
     )
     diode_orientation = DiodeOrientation.COLUMNS
     data_pin = pins[1]
-    rgb_pixel_pin = pins[0]
     i2c = board.I2C
 
     # flake8: noqa

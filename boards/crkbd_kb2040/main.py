@@ -1,14 +1,10 @@
 from kb import KMKKeyboard
 
-from kmk.extensions.rgb import RGB
 from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.split import Split, SplitSide, SplitType
 
 keyboard = KMKKeyboard()
-
-# Adding extensions
-rgb = RGB(pixel_pin=keyboard.rgb_pixel_pin, num_pixels=27, val_limit=100, hue_default=190, sat_default=100, val_default=5)
 
 # TODO Comment one of these on each side
 split_side = SplitSide.LEFT
@@ -18,7 +14,6 @@ split = Split(split_type=SplitType.BLE, split_side=split_side)
 layers_ext = Layers()
 
 keyboard.modules = [layers_ext, split]
-keyboard.extensions = [rgb]
 #
 # Cleaner key names
 _______ = KC.TRNS
